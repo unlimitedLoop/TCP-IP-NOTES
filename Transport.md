@@ -24,7 +24,7 @@
 # 运输层
 ## UDP：用户数据报协议
 ### UDP首部
-![UDP首部](images/UDP首部.PNG "UDP首部")
+![UDP首部](images/UDP-header.PNG "UDP首部")
 
 端口号表示发送进程和接收进程，IP层将数据报分配给TCP或UDP，因此TCP端口号和UDP端口号是相互独立的
 
@@ -51,7 +51,7 @@ TCP提供可靠的，面向连接的字节流服务
 
 TCP首部
 
-![TCP首部](images/TCP首部.png "TCP首部")
+![TCP首部](images/TCP-header.png "TCP首部")
 
 TCP提供全双工，数据在两个方向独立传送，因此连接的每一端都保持数据序号
 
@@ -62,7 +62,7 @@ TCP是一个面向连接的协议，在发送数据之前，都必须在双方�
 
 #### 建立连接的三次握手
 
-![三次握手](images/三次握手.png "三次握手")
+![三次握手](images/three-handshake.png "三次握手")
 
 + 客户端发送一个SYN段指明客户请求建立连接，这个SYN段为1
 + 服务器发回SYN作为应答
@@ -71,7 +71,7 @@ TCP是一个面向连接的协议，在发送数据之前，都必须在双方�
 #### 关闭连接的四次握手
 TCP连接是全双工的,因此每个方向必须进行单独的关闭
 
-![四次握手](images/四次握手.png "四次握手")
+![四次握手](images/four-handshark.png "四次握手")
 
 + 主动关闭方发出FIN
 + 被动关闭方发送FIN信号的ACK确认，随后发送FIN
